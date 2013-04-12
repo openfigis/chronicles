@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body>
+<span
+ style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">Definition</span><br
+ style="font-family: Helvetica,Arial,sans-serif;">
+<span style="font-family: Helvetica,Arial,sans-serif;">A
+track
+represents an
+intermediate result.</span>
+<span style="font-family: Helvetica,Arial,sans-serif;">A
+track
+is&nbsp;the
+cumulation
+of steps,
+expressed in a csv file. There are in total&nbsp;<span
+ style="font-weight: bold;">6</span>
+calculation steps performed&nbsp;in
+order
+to&nbsp;produce a development chart. </span><span
+ style="font-family: Helvetica,Arial,sans-serif;">There
+are in total&nbsp; <span style="font-weight: bold;">3</span>
+calculation steps performed&nbsp;in
+order
+to&nbsp;produce a capture&nbsp;chart. </span><br
+ style="font-family: Helvetica,Arial,sans-serif;">
+<br style="font-family: Helvetica,Arial,sans-serif;">
+<span style="font-weight: bold;"></span>
+<table style="font-family: Helvetica,Arial,sans-serif;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-weight: bold;">Track</td>
+      <td style="font-weight: bold;">Description of the tracks&nbsp;for
+Development</td>
+      <td style="font-weight: bold;">Description
+of the tracks for Capture</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><a
+ href="csv/development/track/1/startyear/1950/endyear/2007/clusters/10/top/200/development.csv">1</a></td>
+      <td>
+      <ul>
+        <li>extract the date from
+the FishStat DB through the&nbsp;fishstatJ api&nbsp;</li>
+        <li>convert tabular series
+data to a pivot table</li>
+      </ul>
+      </td>
+      <td>identical to development</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><a
+ href="csv/development/track/2/startyear/1950/endyear/2007/clusters/10/top/200/development.csv">2</a></td>
+      <td>
+      <ul>
+        <li>&nbsp;add columns
+with average.</li>
+        <li>sort high to low on
+average</li>
+        <li>calculate Totals Per
+Year</li>
+        <li>select top X</li>
+      </ul>
+      </td>
+      <td>identical to development</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><a
+ href="csv/development/track/3/startyear/1950/endyear/2007/clusters/10/top/200/development.csv">3</a></td>
+      <td>
+      <ul>
+        <li>concatenate
+the
+columns area with taxonomic code</li>
+        <li>remove OTHER stuff.</li>
+        <li>tranpose table</li>
+        <li>remove all the
+aggregated columns and rows.</li>
+      </ul>
+      </td>
+      <td><a
+ href="csv/capture/track/3/startyear/1995/endyear/1999/top/10/capture.csv">sum
+up totals</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><a
+ href="csv/development/track/4/startyear/1950/endyear/2007/clusters/10/top/200/development.csv">4</a></td>
+      <td>
+      <ul>
+        <li>standardise</li>
+        <li>do the cluster analysis</li>
+      </ul>
+      </td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><a
+ href="csv/development/track/5/startyear/1950/endyear/2007/clusters/10/top/200/development.csv">5</a></td>
+      <td>
+      <ul>
+        <li>create slope table</li>
+        <li>create phase table</li>
+        <li>calculate phases and periods</li>
+        <li>calculated percentages</li>
+      </ul>
+      </td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><a
+ href="csv/development/track/6/startyear/1950/endyear/2007/clusters/10/top/200/development.csv">6</a></td>
+      <td>
+      <ul>
+        <li>adjust
+phase&nbsp;names</li>
+      </ul>
+      </td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+<span style="font-family: Helvetica,Arial,sans-serif;">Note:
+links of
+the tracknumbers are examples for Develment. &nbsp;Development means
+related to the
+charts with the phases of fishery development.&nbsp;</span><br
+ style="font-family: Helvetica,Arial,sans-serif;">
+<br style="font-family: Helvetica,Arial,sans-serif;">
+<a style="font-family: Helvetica,Arial,sans-serif;" href="index.html">home</a><br
+ style="font-family: Helvetica,Arial,sans-serif;">
+<br style="font-family: Helvetica,Arial,sans-serif;">
+</body>
+</html>

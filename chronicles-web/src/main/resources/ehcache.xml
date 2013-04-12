@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+
+
+
+	<!-- Location of persistent caches on disk. This one is not used yet. -->
+	<diskStore path="java.io.tmpdir/chronicles-web-004" />
+
+	<!-- this one is not used -->
+	<defaultCache maxElementsInMemory="500" eternal="true" overflowToDisk="false" />
+
+
+	<!-- this is the one used in the cache annotations ( @Cacheable(cacheName = "ChroniclesCache") ) -->
+	<cache name="ChroniclesCache" maxElementsInMemory="500" eternal="true" overflowToDisk="false"
+		memoryStoreEvictionPolicy="LFU" />
+
+</ehcache>
+
+

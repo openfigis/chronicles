@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+  
+  <title>Chronicles on the web</title><meta content="Erik van Ingen" name="author">
+  <meta content="Chronicles webservice operations" name="description"></head>
+
+<body>
+<br style="font-family: Helvetica,Arial,sans-serif;">
+<div style="text-align: center; color: rgb(0, 153, 0); font-family: Helvetica,Arial,sans-serif;"><big><big><big>Welcome
+to
+the &nbsp;<span style="font-weight: bold;">chronicles</span><span style="font-weight: bold;">
+</span>webservice
+application<br>
+<small><small><small><small>&nbsp;</small></small></small></small><br>
+</big></big></big><big><big><big><small><small><br>
+Results are cached, maximum number of objects in the cache is 500. <br>
+If you hit an operation for the first time, you may have to wait a few
+minutes. <br>
+<br>
+</small></small></big></big></big><big><big><big><small><small>This
+is the a <a href="http://en.wikipedia.org/wiki/REST#RESTful_web_services">REST</a>
+based
+webservice for Chronicles&nbsp;operations. </small></small></big></big></big><big><big><big><small><small>
+Go&nbsp;</small></small></big></big></big><big><big><big><a href="http://km.fao.org/FIGISwiki/index.php/Chronicles"><small><small>here</small></small></a></big></big></big><big><big><big><small><small>
+to for more
+documentation or ask erik.vaningen@fao.org <br>
+</small></small></big></big></big><br>
+<br>
+<table border="1" cellpadding="5" cellspacing="10">
+  <tbody>
+    <tr align="center">
+      <td><b>Chronicles
+operation</b></td>
+      <td><span style="font-weight: bold;">Syntax</span></td>
+      <td> <b> </b> <span style="font-weight: bold;"><span style="font-weight: bold;">Example</span></span></td>
+    </tr>
+    <tr align="center">
+      <td colspan="1" rowspan="2" style="text-align: left;">generate
+development
+chart</td>
+      <td style="text-align: left;"><span style="font-weight: bold;"></span><small>chart/development/startyear/{startyear}/endyear/{endyear}/clusters/{clusters}/top/{top}/chart.png</small>
+      </td>
+      <td class="" style="text-align: left;"><small><small><b><a href="chart/development/startyear/1950/endyear/2007/clusters/10/top/200/chart.png">chart/development/startyear/1950/endyear/2007/clusters/10/top/200/chart.png</a></b></small></small></td>
+    </tr>
+    <tr>
+      <td style="text-align: left;"><span style="font-weight: bold;"></span><small>chart/development/startyear/{startyear}/endyear/{endyear}/clusters/{clusters}/top/{top}/un/{un}</small><small>/chart.png</small><br>
+      <span style="font-weight: bold;">*1)</span></td>
+      <td class="" style="text-align: left;"><small><small><b><a href="chart/development/startyear/1950/endyear/2007/clusters/10/top/200/un/392/chart.png">chart/development/startyear/1950/endyear/2007/clusters/10/top/200/un/392/chart.png</a>&nbsp;</b></small></small></td>
+    </tr>
+    <tr align="center">
+      <td colspan="1" rowspan="2" style="text-align: left;">generate
+capture chart</td>
+      <td style="text-align: left;"> <small>chart/capture</small><small>/startyear/{startyear}/endyear/{endyear}/top/{top}</small><small>/chart.png</small></td>
+      <td class="" style="text-align: left;"><small><small><b><a href="chart/capture/startyear/1950/endyear/2007/top/200/chart.png">chart/capture/startyear/1950/endyear/2007/top/200/chart.png</a></b></small></small></td>
+    </tr>
+    <tr>
+      <td style="text-align: left;"><small>chart/capture</small><small>/startyear/{startyear}/endyear/{endyear}/top/{top}</small><small>/un/{un}</small><small>/chart.png</small><br>
+      <span style="font-weight: bold;">*1)</span></td>
+      <td class="" style="text-align: left;"><a href="chart/capture/startyear/1950/endyear/2007/top/200/un/392032/chart.png"><small><small><b>chart/capture/startyear/1950/endyear/2007/top/200/un/392032/chart.png</b></small></small></a></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="2">generate
+development<br>
+csv</td>
+      <td><small>csv/development/track/{track}/startyear/{startyear}/endyear/{endyear}/clusters/{clusters}/top/{top}<br>
+      </small><span style="font-weight: bold;">*2)</span></td>
+      <td class=""><small><small><b><a href="csv/development/track/3/startyear/1950/endyear/2007/clusters/10/top/200/development.csv">csv/development/track/3/startyear/1950/endyear/2007/clusters/10/top/200/development.csv</a></b></small></small></td>
+    </tr>
+    <tr>
+      <td><small>csv/development/track/{track}/startyear/{startyear}/endyear/{endyear}/clusters/{clusters}/top/{top}/</small><small>un/{un}</small><br>
+      <span style="font-weight: bold;">*2)</span></td>
+      <td class=""><a href="csv/development/track/3/startyear/1950/endyear/2007/clusters/10/top/200/un/156/development.csv"><small><small><b>csv/development/track/3/startyear/1950/endyear/2007/clusters/10/top/200/un/156/development.csv</b></small></small></a></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="2">generate capture csv</td>
+      <td><small>csv/capture/track/{track}/startyear/{startyear}/endyear/{endyear}/top/{top}<br>
+      </small><span style="font-weight: bold;">*2)</span></td>
+      <td class=""><small><a href="csv/capture/track/1/startyear/1995/endyear/1999/top/10/capture.csv"><small>csv/capture/track/1/startyear/1995/endyear/1999/top/10/capture.csv</small></a></small></td>
+    </tr>
+    <tr>
+      <td><small>csv/capture/track/{track}/startyear/{startyear}/endyear/{endyear}/top/{top}</small><small>/</small><small>un/{un}<br>
+      </small><span style="font-weight: bold;">*2)</span></td>
+      <td class=""><a href="csv/capture/track/1/startyear/1995/endyear/1999/top/10/un/352/capture.csv"><small><small><small>csv/capture/track/1/startyear/1995/endyear/1999/top/10/un/352/capture.csv</small></small></small></a></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div style="text-align: left;"><span style="font-weight: bold;">*1)</span>
+The
+parameter <span style="font-weight: bold;">un</span>
+can contain one or more UN country codes. Go <a href="http://www.fao.org/countryprofiles/iso3list.asp?lang=en">here</a>
+for the list of UN country codes. &nbsp;Example for <span style="font-weight: bold;">Japan</span>
+is <span style="font-weight: bold;">392</span>.
+Example for <span style="font-weight: bold;">Japan
+and Argentia</span> is <span style="font-weight: bold;">392032<br>
+*</span><span style="font-weight: bold;">2)&nbsp;</span>Go
+<a href="track.html">here</a>
+for an explanation of the tracks<span style="font-weight: bold;"></span>
+</div>
+<br>
+<br>
+<br>
+<br>
+version 0.0.4<br>
+</div>
+</body></html>
